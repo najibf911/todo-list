@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>To-Do List</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="to-do-list.ico">
+    <!-- tailwindcss -->
+    <link href="./src/output.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- main content -->
+    <section class="bg-amber-950 h-[100vh] py-28 flex justify-center">
+        <div class="max-w-[600px] w-[90%] flex flex-col bg-amber-200 rounded-2xl p-5">
+            <!-- title -->
+            <div class="text-2xl font-bold mb-4">To-Do List <i class="fa-solid fa-list-ol"></i></div>
+            <!-- search -->
+            <div class="mb-4 gap-x-5 flex justify-between">
+                <input type="text" id="search-bar" placeholder="Search..." class="p-2 border border-amber-900 rounded-xl w-[80%]">
+                <button class="bg-amber-900 text-white p-2 rounded-xl w-[15%]" onclick="addTodo()">Add</button>
+            </div>
+            <!-- item -->
+            <div class="flex flex-col w-full py-2  border-amber-900">
+                <ul id="todo-items" class="w-full overflow-y-scroll h-[33rem]">
+                    <!-- items akan ditambahkan dinamis -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- main content -->
+
+    <!-- main script -->
+    <script src="/src/js/script.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/91aeb3a13b.js" crossorigin="anonymous"></script>
+</body>
+</html>
