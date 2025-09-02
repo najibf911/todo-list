@@ -42,6 +42,5 @@ function addTodo() {
   todoItems.appendChild(li);
 
   searchBar.value = "";
- }
 
 };
