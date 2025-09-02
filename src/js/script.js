@@ -2,7 +2,7 @@ const searchBar = document.getElementById("search-bar");
 const todoItems = document.getElementById("todo-items");
 
 function addTodo() {
- if (searchBar.value === '') {
+ if (searchBar.value === "") {
   alert("Mohon isikan tugas.");
  } else {
   let li = document.createElement("li");
